@@ -28,7 +28,8 @@ var openVideoFrame = function(e) {
 
 	var videoLink = clickedListItem.getAttribute("href");
 	console.log(videoLink);
-	player.loadVideoById(videoLink, 0, "large")
+	player.loadVideoById(videoLink, 0, "large");
+	event.target.playVideo();
 }
 
 function onYouTubeIframeAPIReady() {
@@ -45,7 +46,7 @@ function onYouTubeIframeAPIReady() {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-	event.target.playVideo();
+	//event.target.playVideo();
 }
 
 // 5. The API calls this function when the player's state changes.
