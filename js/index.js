@@ -34,12 +34,14 @@ var openVideoFrame = function(e) {
 
 function onYouTubeIframeAPIReady() {
 player = new YT.Player('player', {
+		height: '390',
+		width: '640',
+		videoId: 'M7lc1UVf-VE',
 		events: {
 			'onReady': onPlayerReady,
 			'onStateChange': onPlayerStateChange
 		}
 	});
-	player.style.display = 'none';
 }
 
 // 4. The API will call this function when the video player is ready.
