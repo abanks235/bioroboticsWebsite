@@ -42,7 +42,7 @@ function onYouTubeIframeAPIReady() {
 			'onStateChange': onPlayerStateChange
 		}
 	});
-	player.hide();
+	player.style.display = 'none';
 }
 
 // 4. The API will call this function when the video player is ready.
