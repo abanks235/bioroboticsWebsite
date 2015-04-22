@@ -42,7 +42,6 @@ function onYouTubeIframeAPIReady() {
 			'onStateChange': onPlayerStateChange
 		}
 	});
-	
 	player.hide();
 }
 
