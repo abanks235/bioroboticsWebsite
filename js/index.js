@@ -6,7 +6,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
-var player = document.getElementById('player')
+var player = document.getElementById('player');
+player.style.display = 'none';
 
 var closest = function closest(el, fn) {
 	return el && ( fn(el) ? el : closest(el.parentNode, fn) );
@@ -30,6 +31,7 @@ var openVideoFrame = function(e) {
 	console.log(videoLink);
 	player.loadVideoById(videoLink, 0, "large");
 	player.playVideo();
+	player.style.display = 'block';
 }
 
 function onYouTubeIframeAPIReady() {
