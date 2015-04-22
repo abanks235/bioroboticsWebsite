@@ -8,8 +8,6 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //    after the API code downloads.
 var player;
 
-player.hide();
-
 var closest = function closest(el, fn) {
 	return el && ( fn(el) ? el : closest(el.parentNode, fn) );
 };
@@ -44,6 +42,8 @@ function onYouTubeIframeAPIReady() {
 			'onStateChange': onPlayerStateChange
 		}
 	});
+	
+	player.hide();
 }
 
 // 4. The API will call this function when the video player is ready.
