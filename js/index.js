@@ -29,7 +29,7 @@ var openVideoFrame = function(e) {
 	var videoLink = clickedListItem.getAttribute("href");
 	console.log(videoLink);
 	player.loadVideoById(videoLink, 0, "large");
-	event.target.playVideo();
+	player.playVideo();
 }
 
 function onYouTubeIframeAPIReady() {
