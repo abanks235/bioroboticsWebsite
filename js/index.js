@@ -31,7 +31,7 @@ var openVideoFrame = function(e) {
 	console.log(videoLink);
 	player.loadVideoById(videoLink, 0, "large");
 	player.playVideo();
-	player.style.display = 'block';
+	document.getElementById('player').style.display = 'block';
 }
 
 function onYouTubeIframeAPIReady() {
